@@ -6,6 +6,7 @@
 
     <ItemGroup>
       <PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="3.2.0" />
+      <PackageReference Include="Microsoft.Orleans.OrleansCodeGenerator.Build" Version="3.2.0" />
     </ItemGroup>
 
 </Project>
