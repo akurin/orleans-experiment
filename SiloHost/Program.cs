@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Net;
 using System.Threading.Tasks;
+using Grains;
 using Microsoft.Extensions.Logging;
 using Orleans;
 using Orleans.Configuration;
 using Orleans.Hosting;
 
-namespace OrleansExperiment
+namespace SiloHost
 {
     public static class Program
     {
@@ -30,7 +31,6 @@ namespace OrleansExperiment
 
         private static async Task<ISiloHost> StartSilo()
         {
-            // define the cluster configuration
             var builder = new SiloHostBuilder()
                 .UseLocalhostClustering()
                 .Configure<ClusterOptions>(options =>

@@ -1,8 +1,9 @@
 using System.Threading.Tasks;
+using Contracts;
 using Microsoft.Extensions.Logging;
 using Orleans;
 
-namespace OrleansExperiment
+namespace Grains
 {
     public class HelloGrain : Grain, IHello
     {
